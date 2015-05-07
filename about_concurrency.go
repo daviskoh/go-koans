@@ -27,6 +27,7 @@ func aboutConcurrency() {
 
 	// assert(__delete_me__) // concurrency can be almost trivial
 	// your code goes here
+	// kick off task in a new goroutine
 	go findPrimeNumbers(ch)
 
 	assert(<-ch == 2)
